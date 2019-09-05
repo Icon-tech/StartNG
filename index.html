@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@icontech Resume</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+
+
+<body>
+    <div class="container">
+  <section class="main">
+  
+  <div>
+   <img class="avatar" src="https://res.cloudinary.com/icontech/image/upload/v1566719758/icontech/my_img_c5zo9h.jpg " alt="my picture" >
+  </div>
+  <div>
+      <div class="my-name">ADEBANJI SAHEED AKOLADE</div>
+      <div class="my-title">FRONT END DEVELOPER</div>
+       <div class="about">ELEYELE STREET</div>
+       <div class="about">IBADAN CITY,</div>
+       <div class="about">08149497788,</div>
+      <div class="about">AKOLADE96@GMAIL.COM.</div>
+      <P class="focus">An aspiring front end Developer with a year of experience in coding, testing and establishing system improvements.<br> Looking for an opportunity to explore new career path.
+    </P>
+   </div> 
+</section>
+<section class="main">
+   <div class="section-title">SKILLS</div>
+   <ul class="lists">
+  <li>Analytical</li>  
+   <li> Adaptable (work in changing environment)</li>
+   <li> Quick Learner</li>
+    <li>Able to Build Relationships</li>
+  <li> Loyal and Discreet (maintain confidentiality)</li>
+  <li> Flexible</li>
+   <li> Responsible</li>
+   </ul>
+  </section>
+
+  <section class="main">
+   <div class="section-title">EXPERIENCE</div>
+   <p>August 2018- present</p>
+   <p>HNG INTERNSHIP , NIGERIA - FRONT END DEVELOPER</p>
+  
+</section>
+
+  <section class="main">
+   <div class="section-title">EDUCATION</div>
+   <P>JUNE  2014 -  JULY 2019</P>
+   <p>UNIVERSITY OF TECHNOLOGY, AKURE-HIGH SCHOOL DIPLOMA </p>
+       <p>BACHELOR OF SCIENCE IN COMPUTER SCIENCE.</p>
+   </section>
+<form action="#" method="">
+  <fieldset>
+   <div class="row-Tab">
+    <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input type="text" name="email" id="name" class="input-field" minlength="4" required placeholder="Enter your name">
+      </div>
+    </div>
+
+<div class="row-Tab">
+  <div class="labels">
+      <label id="email-label" for="email">* Email: </label>
+    </div>
+    <div class="rightTab">
+      <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+    </div>
+  </div>
+   <div class="row-Tab">
+      <div class="labels">
+          <label id="message-label" for="mssg title">*Title: </label>
+        </div>
+        <div class="rightTab">
+          <input type="text" name="email" id="title" class="input-field" required placeholder="Your message title here">
+        </div>
+      </div>
+      <div class="rowTab">
+          <div class="labels">
+            <label for="comments">*Any Message?</label>
+          </div>
+          <div class="rightTab">
+            <textarea id="message" class="input-field" style="height:50px; resize:vertical;" name="comment" minlength="20" placeholder="Enter your message here..."></textarea>
+          </div>
+        </div>
+        <div>
+        <button id="userSubmit" type="submit">Submit</button>
+        </div>
+        </form>    
+       <script>
+				
+				function validation(){
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var title = document.getElementById("title").value;
+    var message = document.getElementById("message").value;
+    var error_message = document.getElementById("error_message");
+    var text;
+
+    // alert(name);
+    // alert(email);
+    error_message.style.padding = "10px";
+
+    if(name.length < 4) {
+    text = "Please Enter Valid Name";
+        error_message.innerHTML = text;
+        return false;
+    }
+
+    if(title.length < 10) {
+        text = "Please Enter Correct Title";
+            error_message.innerHTML = text;
+            return false;
+    }
+
+    if(email.indexOf("@") == -1 || email.length < 6) {
+    // if(email.length < 6 && email.includes('@') && email.includes('.')){
+        text = "Please Enter Valid Email";
+        error_message.innerHTML = text;
+        return false;
+    }
+
+    if(message.length <= 20) {
+        text = "Please Enter almost 150 character";
+            error_message.innerHTML = text;
+            return false;
+    }
+    alert("Form Submitted Successfully!")
+    return true;
+
+        
+}
+			</script> 
+</body>
+</html>
